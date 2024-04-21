@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "work sans";
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    /* justify-content: space-between; */
+    padding: 0px 90px;
+    padding-top: 150px;
+    gap: 90px;
+}
+
+#left {
+    height: 100%;
+    width: 45%;
+    /* background-color: orange; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+#left h1 {
+    font-size: 110px;
+    font-weight: 500;
+    line-height: 115px;
+}
+
+#bottom-left {
+    height: 40%;
+    width: 100%;
+    /* background-color: yellowgreen; */
+
+}
+
+#color {
+    /* background-color: blue; */
+    width: fit-content;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    border: 1px solid black;
+}
+
+#color h5 {
+    font-size: 18px;
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+#color1 {
+    height: 18px;
+    width: 18px;
+    background-color: rgb(245, 167, 64);
+    border-radius: 50%;
+    margin: 3px;
+}
+
+#color2 {
+    height: 18px;
+    width: 18px;
+    background-color: rgb(99, 98, 98);
+    border-radius: 50%;
+}
+
+#left h2 {
+    margin-top: 50px;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+#left p {
+    font-size: 15px;
+    width: 70%;
+    font-weight: 500;
+    color: #444;
+    line-height: 25px;
+}
+
+#right {
+    /* border: 2px solid red; */
+    height: 97%;
+    width: 33%;
+    /* background-color: grey; */
+    position: relative;
+}
+
+#right-top {
+    /* background-color: red; */
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+
+#right-top h4 {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+#right-top h5 {
+    font-size: 13px;
+}
+
+#right-top h5 i {
+    color: goldenrod;
+}
+
+#right img {
+    width: 100%;
+    height: 87%;
+    object-fit: cover;
+}
+
+#black-circle {
+    position: absolute;
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #232329;
+    right: -15%;
+    top: 25%;
+}
+
+#black-circle h5 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#rotated {
+    position: absolute;
+    left: -7%;
+    bottom: 3%;
+    transform-origin: 0 0;
+    rotate: -90deg;
+    font-size: 25px;
+    font-weight: 600;
+}
