@@ -15,7 +15,6 @@ html, body {
     height: 100%;
     display: flex;
     align-items: flex-end;
-    /* justify-content: space-between; */
     padding: 0px 90px;
     padding-top: 150px;
     gap: 90px;
@@ -24,7 +23,6 @@ html, body {
 #left {
     height: 100%;
     width: 45%;
-    /* background-color: orange; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -32,20 +30,16 @@ html, body {
 }
 
 #left h1 {
-    font-size: 110px;
+    font-size: 8vw;
     font-weight: 500;
-    line-height: 115px;
+    line-height: 8.1vw;
 }
 
 #bottom-left {
-    height: 40%;
     width: 100%;
-    /* background-color: yellowgreen; */
-
 }
 
 #color {
-    /* background-color: blue; */
     width: fit-content;
     padding: 5px 10px;
     display: flex;
@@ -64,7 +58,7 @@ html, body {
 #color1 {
     height: 18px;
     width: 18px;
-    background-color: rgb(245, 167, 64);
+    background-color: rgb(251, 194, 245);
     border-radius: 50%;
     margin: 3px;
 }
@@ -72,34 +66,31 @@ html, body {
 #color2 {
     height: 18px;
     width: 18px;
-    background-color: rgb(99, 98, 98);
+    background-color: rgb(255, 164, 45);
     border-radius: 50%;
 }
 
 #left h2 {
     margin-top: 50px;
-    font-size: 25px;
+    font-size: 2.3vw;
     margin-bottom: 15px;
 }
 
 #left p {
-    font-size: 15px;
+    font-size: 1.3vw;
     width: 70%;
     font-weight: 500;
     color: #444;
-    line-height: 25px;
+    line-height: 1.7vw;
 }
 
 #right {
-    /* border: 2px solid red; */
     height: 97%;
     width: 33%;
-    /* background-color: grey; */
     position: relative;
 }
 
 #right-top {
-    /* background-color: red; */
     height: 80px;
     width: 100%;
     display: flex;
@@ -154,4 +145,115 @@ html, body {
     rotate: -90deg;
     font-size: 25px;
     font-weight: 600;
+}
+
+@media (max-width:600px) {
+    #main {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        padding: 40px;
+        gap: 50px;
+    }
+
+    #left {
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 50px;
+        gap: 50px;
+    }
+
+
+    #left h1 {
+        font-size: 18vw;
+        line-height: 18vw;
+    }
+
+    #color {
+        width: fit-content;
+        padding: 5px 10px;
+    }
+
+    #color h5 {
+        font-size: 13px;
+        margin-right: 5px;
+    }
+
+    #color1 {
+        height: 12px;
+        width: 12px;
+    }
+
+    #color2 {
+        height: 12px;
+        width: 12px;
+    }
+
+    #left h2 {
+        margin-top: 20px;
+        font-size: 3.8vw;
+        margin-bottom: 8px;
+    }
+
+    #left p {
+        font-size: 2.8vw;
+        width: 85%;
+        font-weight: 500;
+        line-height: 3.2vw;
+    }
+
+    #right {
+        height: 50%;
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+
+    #right-top {
+        height: 60px;
+    }
+
+    #right-top h4 {
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    #right-top h5 {
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    #right img {
+        width: 100%;
+        height: 88%;
+        border-radius: 5px;
+    }
+
+    #black-circle {
+        height: 80px;
+        width: 80px;
+        right: -10%;
+        top: -10%;
+    }
+
+    #black-circle h5 {
+        font-size: 12px;
+    }
+
+    #rotated {
+        left: 0%;
+        top: -10%;
+        rotate: 0deg;
+        transform-origin: 0 0;
+        font-size: 28px;
+        font-weight: 500;
+    }
 }
